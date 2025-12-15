@@ -124,6 +124,7 @@
     <ClCompile Include="Balloon.cpp" />
     <ClCompile Include="BaseChara.cpp" />
     <ClCompile Include="Car.cpp" />
+    <ClCompile Include="DameClass.cpp" />
     <ClCompile Include="Input.cpp" />
     <ClCompile Include="Rocket.cpp" />
     <ClCompile Include="theMain.cpp" />
@@ -134,6 +135,7 @@
     <ClInclude Include="Balloon.h" />
     <ClInclude Include="BaseChara.h" />
     <ClInclude Include="Car.h" />
+    <ClInclude Include="DameClass.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Rocket.h" />

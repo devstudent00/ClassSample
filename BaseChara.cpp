@@ -1,5 +1,6 @@
 #include "BaseChara.h"
 #include <DxLib.h>
+#include "globals.h"
 
 BaseChara::BaseChara()
 	:pos_(0.0f, 0.0f),
@@ -26,7 +27,12 @@ void BaseChara::Update()
 	//‰½‚à‚µ‚È‚¢
 }
 
-void BaseChara::Draw()
-{
-	//‰½‚à‚µ‚È‚¢
+void BaseChara::Draw() {
+	//‚±‚ê‚ÍŒÄ‚Î‚ê‚Ä‚µ‚Ü‚Á‚½•ª‚©‚è‚â‚·‚¢‚à‚Ì‚ğ‘‚¢‚Ä‚¨‚­
+	int centerX = WIN_WIDTH / 2;
+	int centerY = WIN_HEIGHT / 2;
+	int beforeSize = GetFontSize();
+	SetFontSize(50);
+	DrawString(centerX, centerY, "BaseCharaDraw()", GetColor(255, 0, 0));
+	SetFontSize(beforeSize);
 }

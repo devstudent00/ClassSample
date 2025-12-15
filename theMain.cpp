@@ -9,6 +9,8 @@
 #include "UFO.h"
 #include "Balloon.h"
 
+#include "DameClass.h"
+
 namespace
 {
 	const int BGCOLOR[3] = { 255, 250, 205 }; // îwåiêF{ 255, 250, 205 }; // îwåiêF
@@ -56,6 +58,7 @@ void Initialize()
 	chara_vector.push_back(new Rocket(Vector2D(WIN_WIDTH / 2, GROUND_HEIGTH), Vector2D(1, 0), GetColor(255, 0, 0)));
 	chara_vector.push_back(new UFO(Vector2D(40, 50), Vector2D(200, 0), GetColor(0, 255, 0)));
 	chara_vector.push_back(new Balloon(Vector2D(WIN_WIDTH / 2, GROUND_HEIGTH), Vector2D(1, 0), GetColor(0, 0, 255)));
+	chara_vector.push_back(new DameClass(Vector2D(20, GROUND_HEIGTH + 500), Vector2D(200.0f, 3.0f), GetColor(255, 255, 255)));
 
 }
 void Update()
