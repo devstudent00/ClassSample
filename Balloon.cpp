@@ -1,3 +1,5 @@
+//aaa
+
 #include "Balloon.h"
 #include <DxLib.h>
 #include "Input.h"
@@ -5,9 +7,9 @@
 #include "cmath"
 
 namespace {
-	const int gravity = 1; //d—Í
-	const int amplitude = 5; //U‚ê•i¦‘å‚«‚­‚·‚é‚Æ•‚ª‘å‚«‚­‚È‚éj
-	const int period = 1.2f; //üŠúi¦‘å‚«‚­‚·‚é‚ÆA‘‚­‚È‚éj
+	const int gravity = 1; //é‡åŠ›
+	const int amplitude = 5; //æŒ¯ã‚Œå¹…ï¼ˆâ€»å¤§ããã™ã‚‹ã¨å¹…ãŒå¤§ãããªã‚‹ï¼‰
+	const int period = 1.2f; //å‘¨æœŸï¼ˆâ€»å¤§ããã™ã‚‹ã¨ã€æ—©ããªã‚‹ï¼‰
 }
 
 Balloon::Balloon()
@@ -44,7 +46,7 @@ void Balloon::Update()
 		pos_.y = GROUND_HEIGTH;
 		vel_.x = 0;
 		vel_.y = 0;
-		angles = 0; //Šp“x‚ğ0“x‚É
+		angles = 0; //è§’åº¦ã‚’0åº¦ã«
 		isJumping = false;
 	}
 }
